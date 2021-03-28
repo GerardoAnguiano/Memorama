@@ -232,6 +232,7 @@
             this.artaudcover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.artaudcover1.TabIndex = 13;
             this.artaudcover1.TabStop = false;
+            this.artaudcover1.Click += new System.EventHandler(this.artaudcover1_Click);
             // 
             // artaudcover2
             // 
