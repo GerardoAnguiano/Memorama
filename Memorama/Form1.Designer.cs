@@ -54,6 +54,7 @@
             this.panteracover2 = new System.Windows.Forms.PictureBox();
             this.gunscover1 = new System.Windows.Forms.PictureBox();
             this.gunscover2 = new System.Windows.Forms.PictureBox();
+            this.puntaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.artaud1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metallica1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pink1)).BeginInit();
@@ -243,6 +244,7 @@
             this.artaudcover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.artaudcover2.TabIndex = 14;
             this.artaudcover2.TabStop = false;
+            this.artaudcover2.Click += new System.EventHandler(this.artaudcover2_Click);
             // 
             // metallicacover1
             // 
@@ -253,6 +255,7 @@
             this.metallicacover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.metallicacover1.TabIndex = 15;
             this.metallicacover1.TabStop = false;
+            this.metallicacover1.Click += new System.EventHandler(this.metallicacover1_Click);
             // 
             // metallicacover2
             // 
@@ -263,6 +266,7 @@
             this.metallicacover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.metallicacover2.TabIndex = 16;
             this.metallicacover2.TabStop = false;
+            this.metallicacover2.Click += new System.EventHandler(this.metallicacover2_Click);
             // 
             // tamecover1
             // 
@@ -273,6 +277,7 @@
             this.tamecover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tamecover1.TabIndex = 17;
             this.tamecover1.TabStop = false;
+            this.tamecover1.Click += new System.EventHandler(this.tamecover1_Click);
             // 
             // tamecover2
             // 
@@ -283,6 +288,7 @@
             this.tamecover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tamecover2.TabIndex = 18;
             this.tamecover2.TabStop = false;
+            this.tamecover2.Click += new System.EventHandler(this.tamecover2_Click);
             // 
             // pinkcover1
             // 
@@ -293,6 +299,7 @@
             this.pinkcover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pinkcover1.TabIndex = 19;
             this.pinkcover1.TabStop = false;
+            this.pinkcover1.Click += new System.EventHandler(this.pinkcover1_Click);
             // 
             // pinkcover2
             // 
@@ -303,6 +310,7 @@
             this.pinkcover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pinkcover2.TabIndex = 20;
             this.pinkcover2.TabStop = false;
+            this.pinkcover2.Click += new System.EventHandler(this.pinkcover2_Click);
             // 
             // panteracover1
             // 
@@ -313,6 +321,7 @@
             this.panteracover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.panteracover1.TabIndex = 21;
             this.panteracover1.TabStop = false;
+            this.panteracover1.Click += new System.EventHandler(this.panteracover1_Click);
             // 
             // panteracover2
             // 
@@ -323,6 +332,7 @@
             this.panteracover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.panteracover2.TabIndex = 22;
             this.panteracover2.TabStop = false;
+            this.panteracover2.Click += new System.EventHandler(this.panteracover2_Click);
             // 
             // gunscover1
             // 
@@ -333,6 +343,7 @@
             this.gunscover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunscover1.TabIndex = 23;
             this.gunscover1.TabStop = false;
+            this.gunscover1.Click += new System.EventHandler(this.gunscover1_Click);
             // 
             // gunscover2
             // 
@@ -343,6 +354,18 @@
             this.gunscover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunscover2.TabIndex = 24;
             this.gunscover2.TabStop = false;
+            this.gunscover2.Click += new System.EventHandler(this.gunscover2_Click);
+            // 
+            // puntaje
+            // 
+            this.puntaje.AutoSize = true;
+            this.puntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.puntaje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.puntaje.Location = new System.Drawing.Point(776, 215);
+            this.puntaje.Name = "puntaje";
+            this.puntaje.Size = new System.Drawing.Size(69, 73);
+            this.puntaje.TabIndex = 25;
+            this.puntaje.Text = "0";
             // 
             // Form1
             // 
@@ -350,6 +373,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(932, 635);
+            this.Controls.Add(this.puntaje);
             this.Controls.Add(this.gunscover2);
             this.Controls.Add(this.gunscover1);
             this.Controls.Add(this.panteracover2);
@@ -433,6 +457,7 @@
         private System.Windows.Forms.PictureBox panteracover2;
         private System.Windows.Forms.PictureBox gunscover1;
         private System.Windows.Forms.PictureBox gunscover2;
+        private System.Windows.Forms.Label puntaje;
     }
 }
 
